@@ -5,7 +5,9 @@ node() {
     }
 
     stage('build'){
-        sh "gradle build"
+        withGradle(){
+            sh "gradle clean build"
+        }
     }
 
 }
