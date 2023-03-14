@@ -5,7 +5,7 @@ node() {
     }
 
     stage('build'){
-        sh "./gradlew build"
+        sh "gradle build"
     }
 
 }
